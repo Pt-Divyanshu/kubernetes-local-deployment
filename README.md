@@ -38,15 +38,15 @@ Deploy and manage a sample NGINX application using Kubernetes locally with Minik
 
 minikube start --driver=docker
 kubectl config use-context minikube
----
+
 ## Apply Deployment
 kubectl apply -f deployment.yaml
 kubectl get pods
----
+
 ## Apply Service
 kubectl apply -f service.yaml
 kubectl get svc
-----
+
 ## Access App
 minikube service nginx-service --http://127.0.0.1:51694/
 ----
